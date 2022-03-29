@@ -1,0 +1,27 @@
+*{
+  background-color: #ADC178;
+}
+.Wrapper{
+  
+  margin-top: -50px;
+  height: 100vh;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #6E4230;
+  font-weight: 700;
+  text-align: center;
+}
+.calculator {
+ height: 320px;
+    width: 235px;
+    border-radius: 5px;  
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+  }
