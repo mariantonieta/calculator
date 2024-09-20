@@ -1,25 +1,15 @@
-const buttons = document.querySelector('.buttons');
-const btn = document.querySelectorAll('span');
-const value = document.getElementById('value');
-
-for(let i = 0; i < btn.length; i++){
-    btn[i].addEventListener('click', function () {
-        if(this.innerHTML == "="){
-            value.innerHTML = eval(value.innerHTML);
-
-        }else{
-            if(this.innerHTML == "Clear"){
-                value.innerHTML= "";
-            }
-            else{
-                value.innerHTML +=  this.innerHTML;
-            }
-        }
-        
-    })
+const display = document.getElementById("display");
+function appendToDisplay(input) {
+  display.value += input;
 }
-const html = document.querySelector('html')
-const check = document.querySelector("#checkbox");
-check.addEventListener('change', function(){
-    html.classList.toggle('dark')
-})
+function clearDisplay() {
+  display.value = "";
+}
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
+}
+module.exports = { appendToDisplay, clearDisplay, calculate };

@@ -1,0 +1,20 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "black and white mode using HTML, CSS, JAVASCRIPT\r [![calculator-white.jpg](https://i.postimg.cc/CKN061y0/calculator-white.jpg)](https://postimg.cc/5H6DXfNK)\r [![calculator-dark.jpg](https://i.postimg.cc/hjtnFBgd/calculator-dark.jpg)](https://postimg.cc/KKwwLC1G)",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^25.0.0"
+  }
+}
