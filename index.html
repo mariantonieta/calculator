@@ -9,30 +9,27 @@
 </head>
 <body>
     
-        <h1 class="text">CALCULATOR <br> In black and white <br> mode se it, <br> it's fantastic!!!!</h1>
-    <div>
-<div class="calculator">
-    
-    <div class="buttons">
-        <h2 id="value"></h2>
-        <span id="clear">Clear</span>
-        <span>/</span>
-        <span>*</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span>-</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span id="plus">+</span>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>0</span>
-        <span>00</span>
-        <span>.</span>
-        <span id="equal">=</span>
+  
+<div id="calculator">
+    <input id="display" readonly/>
+        <div id="keys">
+        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearDisplay()" class="operator-btn">C</button>
         
 </div>
 </div>
